@@ -13,6 +13,7 @@ header{
 	height: 279px;
 	padding: 0;
 	margin: 0;
+	@media (max-width: 767px) { width: 100%;     }
 }
 
 .row1 {
@@ -31,11 +32,12 @@ header{
     margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
     .navbar {
         flex-wrap: wrap;
         justify-content: center;
-        height: 48px;
+        height: 54px;
+        width: 100%;
     }
 }
 
@@ -47,10 +49,10 @@ nav ul {
     width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
     nav ul {
         flex-wrap: wrap;
-        margin: 0 35px;
+        margin: 0px 35px;
 
     }
 }
@@ -58,9 +60,10 @@ nav ul {
 nav li {
     flex-grow: 1;
     text-align: center;
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
         flex: 0 0 33%;
         text-align: center;
+
     }
 }
 
@@ -73,8 +76,9 @@ nav li {
     margin: auto;
     font-weight: 700;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
         font-size: 12px;
+
     }
 }
 
@@ -86,7 +90,7 @@ nav li {
     max-width:1366px;
     justify-content: space-between;
     margin: 24px auto;
-    @media (max-width: 1024px) { margin: 15px auto;}
+    @media (max-width: 767px) { margin: 15px auto;}
 }
 
 .row2logo{
@@ -94,12 +98,12 @@ nav li {
     width: 38%;
     height: 62px;
     @media (min-width: 1366px) { height: 72px; }
-    @media (max-width: 1024px) { height: 39px;width: 30%; }
+    @media (max-width: 767px) { height: 39px; width: 30%;}
 }
 
 .name {
     @media (min-width: 1366px) { font-size: 20px; }
-    @media (max-width: 1024px) { font-size: 10px; }
+    @media (max-width: 767px) { font-size: 10px;  }
     font-size: 15px;
     color: #336DB3;
     text-align: left;
@@ -116,7 +120,7 @@ nav li {
     justify-content: center;
     align-items: flex-start;
     @media (min-width: 1366px) { max-width: 295px; }
-    @media (max-width: 1024px) { max-width: 142px; }
+    @media (max-width: 767px) { max-width: 142px; }
 }
 
 .logo2030 {
@@ -130,11 +134,14 @@ nav li {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
         position: absolute;
-        top: 13%;
-        left: 1%;
+        top: 130px;
+        left: 3vw;
         max-width: 177px;
+        @media (max-width: 480px) {
+            left: 15px;
+        }
     }
 }
 
@@ -142,12 +149,17 @@ nav li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
         position: absolute;
-        left: 60vw;
+        left: 58vw;
         max-width: 177px;
+        @media (max-width: 480px) {
+            left: 280px;
+        }
     }
+
 }
 
 .rectangle1, .rectangle2 {
@@ -157,7 +169,7 @@ nav li {
     @media (min-width: 1366px) { height: 35px; }
 
     width: 46%;
-    display: inline-block;
+    display: flex;
     margin: 0 2%;
     justify-content: space-between;
     align-items: center;
@@ -171,8 +183,9 @@ form[name="search"] {
     width: 100%;
     margin-top: 14px;
     height: 27px;
-    @media (max-width: 1024px) {
-        margin-top: auto;
+    @media (max-width: 767px) {
+        margin-top: 0;
+
     }
 }
 
@@ -193,24 +206,26 @@ input[name="q"] {
     color: #336DB3;
     font-size: 15px;
     text-decoration: none;
-    @media (max-width: 1024px) { font-size: 10px; }
+    margin:auto;
+    @media (max-width: 767px) { font-size: 10px; }
 }
 
 .rectangle2 a {
     color: #336DB3;
     font-size: 15px;
     text-decoration: none;
-    @media (max-width: 1024px) { font-size: 10px; }
+    margin:auto;
+    @media (max-width: 767px) { font-size: 10px; }
 }
 .row2lang {
     max-width: 35px;
 
-    @media (max-width: 1024px) { display:flex; max-width: 100px; justify-content: center; align-items: center;}
+    @media (max-width: 767px) { display:flex; max-width: 100px; justify-content: center; align-items: center;}
 }
 .eye {
     display: flex;
     height: 19px;
-    @media (max-width: 1024px) {
+    @media (max-width: 767px) {
         height: 12px;
 
     }
@@ -223,13 +238,13 @@ input[name="q"] {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 
-    @media (max-width: 1024px) { font-size: 10px; margin-top: 0; margin-left: 15px;  }
+    @media (max-width: 767px) { font-size: 10px; margin-top: 0; margin-left: 15px;  }
 }
 
 .lupa{
      display: flex;
      height: 20px;
-     @media (max-width: 1024px) { height: 14px; }
+     @media (max-width: 767px) { height: 14px; }
 }
 
 .text {
@@ -278,26 +293,50 @@ input[name="q"] {
 .menu-toggle {
     display: none;
     font-size: 15px;
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #042558;
     background-color: rgba(28,28,28,0);
-    padding: 10px;
+    padding: 5px;
     border: none;
     cursor: pointer;
 }
+.menu {
+    display: none;
+    align-items: center;
+}
 
-    @media (max-width: 1024px) {
+.arrow {
+    height: 6px;
+    width: 14px;
+}
+
+    @media (max-width: 767px) {
         .navbar2 {
             display: none;
         }
 
-        .menu-toggle {
+        .menu {
             display: flex;
             cursor: pointer;
             position: absolute;
             left: 40vw;
+            top: 130px;
+            min-left: 100px;
+        }
+        .menu-toggle {
+            display: flex;
+        }
+        @media (max-width: 480px) {
+            .menu {
+            left: 190px;
+            top: 130px;
+
+            }
+            .
         }
     }
+
 .navbar2.open {
     display: flex;
     flex-direction: column;
