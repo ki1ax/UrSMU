@@ -93,9 +93,10 @@ nav li {
     @media (max-width: 767px) { margin: 15px auto;}
 }
 
+
 .row2logo{
     display: flex;
-    width: 38%;
+    width: 33%;
     height: 62px;
     @media (min-width: 1366px) { height: 72px; }
     @media (max-width: 767px) { height: 39px; width: 30%;}
@@ -115,7 +116,7 @@ nav li {
 
 .row2prior {
     display: flex;
-    width: 30%;
+    width: 33%;
     max-width: 276px;
     justify-content: center;
     align-items: flex-start;
@@ -134,6 +135,7 @@ nav li {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    margin-right: 7%;
     @media (max-width: 767px) {
         position: absolute;
         top: 130px;
@@ -143,6 +145,11 @@ nav li {
             left: 15px;
         }
     }
+}
+
+.row2-3{
+    display: flex;
+    width: 33%;
 }
 
 .blocks {
@@ -165,9 +172,9 @@ nav li {
 .rectangle1, .rectangle2 {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     height: 30px;
-
+    min-width:100px;
     @media (min-width: 1366px) { height: 35px; }
-
+    min-width: 80px;
     width: 46%;
     display: flex;
     margin: 0 2%;
@@ -207,6 +214,7 @@ input[name="q"] {
     font-size: 15px;
     text-decoration: none;
     margin:auto;
+    padding:auto;
     @media (max-width: 767px) { font-size: 10px; }
 }
 
