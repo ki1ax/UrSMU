@@ -86,8 +86,8 @@ nav li {
 
 .row2 {
     display: flex;
-    width: 90%;
-    max-width:1366px;
+    width: 95%;
+    max-width:  1366px;
     justify-content: space-between;
     margin: 24px auto;
     @media (max-width: 767px) { margin: 15px auto;}
@@ -99,14 +99,15 @@ nav li {
     width: 33%;
     height: 62px;
     @media (min-width: 1366px) { height: 72px; }
-    @media (max-width: 767px) { height: 39px; width: 30%;}
+    @media (max-width: 767px) { height: 39px; width: 33%;}
 }
 
 .name {
     @media (min-width: 1366px) { font-size: 20px; }
-    @media (max-width: 767px) { font-size: 10px;  }
+    @media (max-width: 767px) { font-size: 10px;  min-width: 136px;}
     font-size: 15px;
     color: #336DB3;
+    min-width: 196px;
     text-align: left;
     margin: 0 5px;
     font-weight: 700;
@@ -116,9 +117,10 @@ nav li {
 
 .row2prior {
     display: flex;
-    width: 33%;
+    width: 30%;
     max-width: 276px;
     justify-content: center;
+
     align-items: flex-start;
     @media (min-width: 1366px) { max-width: 295px; }
     @media (max-width: 767px) { max-width: 142px; }
@@ -138,7 +140,7 @@ nav li {
     margin-right: 7%;
     @media (max-width: 767px) {
         position: absolute;
-        top: 130px;
+        top: 120px;
         left: 3vw;
         max-width: 177px;
         @media (max-width: 480px) {
@@ -149,7 +151,12 @@ nav li {
 
 .row2-3{
     display: flex;
+
+    justify-content: right;
     width: 33%;
+    @media (max-width: 767px) {
+        width: 25%;
+    }
 }
 
 .blocks {
@@ -173,8 +180,8 @@ nav li {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     height: 30px;
     min-width:100px;
-    @media (min-width: 1366px) { height: 35px; }
-    min-width: 80px;
+    @media (min-width: 1366px) { height: 35px;}
+    @media (max-width: 767px) { min-width: 80px;}
     width: 46%;
     display: flex;
     margin: 0 2%;
@@ -329,7 +336,7 @@ input[name="q"] {
             cursor: pointer;
             position: absolute;
             left: 40vw;
-            top: 130px;
+            top: 120px;
             min-left: 100px;
         }
         .menu-toggle {
@@ -338,7 +345,7 @@ input[name="q"] {
         @media (max-width: 480px) {
             .menu {
             left: 190px;
-            top: 130px;
+            top: 120px;
 
             }
             .
